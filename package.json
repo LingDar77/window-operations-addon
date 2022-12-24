@@ -1,29 +1,30 @@
 {
   "name": "window-operations-addon",
-  "version": "1.0.14",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "version": "1.0.0",
+  "main": "./target/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "install": "node-gyp rebuild"
   },
   "author": "",
   "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "bindings": "^1.5.0"
+  },
   "devDependencies": {
-    "node-gyp": "^9.1.0",
+    "@types/bindings": "^1.5.1",
+    "nan": "^2.16.0",
     "typescript": "^4.7.4"
   },
+  "types": "./target/index.d.ts",
   "gypfile": true,
-  "description": "",
-  "dependencies": {
-    "nan": "^2.16.0"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/LingDar77/window-operations-addon.git"
+    "url": "git+https://github.com/LingDar77/window-operations-addon.git"
   },
   "bugs": {
     "url": "https://github.com/LingDar77/window-operations-addon/issues"
   },
-  "homepage": "https://github.com/LingDar77/window-operations-addon#readme"
+  "homepage": "https://github.com/LingDar77/window-operations-addon#readme",
+  "description": ""
 }
